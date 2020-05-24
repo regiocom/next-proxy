@@ -1,11 +1,11 @@
 {
   "name": "next-proxy",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": "git@github.com:regiocom/next-proxy.git",
   "author": "Paul Reichelt <paul.reichelt@regiocom.com>",
   "license": "MIT",
-  "types": "dist/index.d.ts",
   "scripts": {
     "build": "rollup -c",
     "build:types": "tsc --project ./tsconfig.declaration.json",
