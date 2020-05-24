@@ -35,10 +35,8 @@ export function createProxyHandler(options) {
           ...options.headers,
         }
 
-        // This would throw a certificate error
+        // We always should use the target host.
         delete headers.host
-        // This is our cookie and never interesting for backend services
-        delete headers.cookie
 
         // Append the original query also to the outgoing request.
         let url = options.target
