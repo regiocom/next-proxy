@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "declaration": true,
+    "noEmit": false,
+    "emitDeclarationOnly": true,
+    "outFile": "dist/index.d.ts"
+  },
+  "exclude": ["**/*.test.js", "typings"]
+}
