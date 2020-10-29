@@ -40,8 +40,12 @@ export function createProxyHandler(options) {
 
         // Append the original query also to the outgoing request.
         let url = options.target
-        if (req.query) {
-          url = `${url}?${querystring.stringify(req.query)}`
+
+        if (req.url) {
+          const orgUrl = new URL(req.url, `http://${req.headers.host}`)
+          if (orgUrl.search) {
+            url = `${url}${orgUrl.search}`
+          }
         }
 
         const requestHandler = /^https:/.exec(url)
