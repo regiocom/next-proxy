@@ -1,4 +1,3 @@
-import querystring from 'querystring'
 import http from 'http'
 import https from 'https'
 
