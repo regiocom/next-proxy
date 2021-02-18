@@ -23,7 +23,7 @@
     "next": "9.x || 10.x"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.16",
+    "@babel/core": "^7.12.17",
     "@babel/preset-env": "^7.12.17",
     "@babel/preset-typescript": "^7.12.17",
     "@types/jest": "^26.0.20",
