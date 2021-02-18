@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
-    "@babel/preset-env": "^7.12.16",
+    "@babel/preset-env": "^7.12.17",
     "@babel/preset-typescript": "^7.12.16",
     "@types/jest": "^26.0.20",
     "@types/test-listen": "^1.1.0",
